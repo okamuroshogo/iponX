@@ -14,6 +14,7 @@
 		788525C41FA0C7CF009D1918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788525C21FA0C7CF009D1918 /* LaunchScreen.storyboard */; };
 		788525CF1FA0C7CF009D1918 /* iponXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788525CE1FA0C7CF009D1918 /* iponXTests.swift */; };
 		788525DA1FA0C7CF009D1918 /* iponXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788525D91FA0C7CF009D1918 /* iponXUITests.swift */; };
+		788525E81FA0CAED009D1918 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788525E71FA0CAED009D1918 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		788525D51FA0C7CF009D1918 /* iponXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iponXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		788525D91FA0C7CF009D1918 /* iponXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iponXUITests.swift; sourceTree = "<group>"; };
 		788525DB1FA0C7CF009D1918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788525E71FA0CAED009D1918 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		788525EA1FA0CBF8009D1918 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				788525CD1FA0C7CF009D1918 /* iponXTests */,
 				788525D81FA0C7CF009D1918 /* iponXUITests */,
 				788525B71FA0C7CF009D1918 /* Products */,
+				788525E91FA0CBF8009D1918 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +104,7 @@
 				788525B91FA0C7CF009D1918 /* AppDelegate.swift */,
 				788525BB1FA0C7CF009D1918 /* ViewController.swift */,
 				788525BD1FA0C7CF009D1918 /* Main.storyboard */,
+				788525E71FA0CAED009D1918 /* UIViewExtension.swift */,
 				788525C01FA0C7CF009D1918 /* Assets.xcassets */,
 				788525C21FA0C7CF009D1918 /* LaunchScreen.storyboard */,
 				788525C51FA0C7CF009D1918 /* Info.plist */,
@@ -123,6 +128,14 @@
 				788525DB1FA0C7CF009D1918 /* Info.plist */,
 			);
 			path = iponXUITests;
+			sourceTree = "<group>";
+		};
+		788525E91FA0CBF8009D1918 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				788525EA1FA0CBF8009D1918 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788525E81FA0CAED009D1918 /* UIViewExtension.swift in Sources */,
 				788525BC1FA0C7CF009D1918 /* ViewController.swift in Sources */,
 				788525BA1FA0C7CF009D1918 /* AppDelegate.swift in Sources */,
 			);
@@ -429,11 +443,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J28AXKJXU7;
 				INFOPLIST_FILE = iponX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ro.okamu.iponX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,11 +459,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J28AXKJXU7;
 				INFOPLIST_FILE = iponX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ro.okamu.iponX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

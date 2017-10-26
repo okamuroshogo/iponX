@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iponX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ShJ-WR-Zge"/>
+                        <viewControllerLayoutGuide type="bottom" id="IUZ-lh-X01"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="スクリーンショット 2017-10-25 22.24.34" translatesAutoresizingMaskIntoConstraints="NO" id="SgD-di-aBM">
+                                <rect key="frame" x="70" y="-10" width="235" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xnw-kb-KwY"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyr-YR-bR4">
+                                <rect key="frame" x="0.0" y="30" width="375" height="616"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eah-gh-83i">
+                                <rect key="frame" x="122.5" y="654" width="130" height="5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="F4S-l2-LfB"/>
+                                    <constraint firstAttribute="height" constant="5" id="U1O-S5-N8x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gh-as-B7f">
+                                <rect key="frame" x="15" y="10" width="50" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4T2-ZK-l9y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2017-10-26 9.56.40" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-ja-TDH">
+                                <rect key="frame" x="291" y="10" width="79" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0Vj-Li-SxJ"/>
+                                    <constraint firstAttribute="width" constant="79" id="7oC-rs-dxz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="eah-gh-83i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6CZ-W6-IVp"/>
+                            <constraint firstItem="SgD-di-aBM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-10" id="9O3-aO-2nM"/>
+                            <constraint firstItem="s7M-ja-TDH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="9ut-Kl-WEy"/>
+                            <constraint firstItem="Uyr-YR-bR4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DjK-SE-JPx"/>
+                            <constraint firstItem="4Gh-as-B7f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="Glu-CX-WR3"/>
+                            <constraint firstItem="eah-gh-83i" firstAttribute="top" secondItem="Uyr-YR-bR4" secondAttribute="bottom" constant="8" id="JMq-Cq-tLO"/>
+                            <constraint firstItem="Uyr-YR-bR4" firstAttribute="top" secondItem="SgD-di-aBM" secondAttribute="bottom" id="Ji4-Oj-St6"/>
+                            <constraint firstItem="4Gh-as-B7f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="MdX-Dh-kV7"/>
+                            <constraint firstItem="SgD-di-aBM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="cI3-WS-MSn"/>
+                            <constraint firstItem="IUZ-lh-X01" firstAttribute="top" secondItem="eah-gh-83i" secondAttribute="bottom" constant="8" id="k5f-iG-rfu"/>
+                            <constraint firstAttribute="trailing" secondItem="s7M-ja-TDH" secondAttribute="trailing" constant="5" id="txF-xb-hYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SgD-di-aBM" secondAttribute="trailing" constant="70" id="v2m-ay-G5r"/>
+                            <constraint firstAttribute="trailing" secondItem="Uyr-YR-bR4" secondAttribute="trailing" id="z1z-CN-Fdy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="contentView" destination="Uyr-YR-bR4" id="rJG-fG-q4M"/>
+                        <outlet property="iponEdge" destination="SgD-di-aBM" id="dWI-D3-VUR"/>
+                        <outlet property="timeLabel" destination="4Gh-as-B7f" id="GZz-dg-0cF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="スクリーンショット 2017-10-25 22.24.34" width="442" height="66"/>
+        <image name="スクリーンショット 2017-10-26 9.56.40" width="144" height="50"/>
+    </resources>
 </document>
